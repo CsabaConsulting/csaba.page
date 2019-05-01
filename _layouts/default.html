@@ -5,17 +5,21 @@
 
   <body>
 
-    {% include header.html %}
+    {% include navbar.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    {% include carousel.html %}
+
+    <div class="container marketing">
+
+      {{ content }}
+
+      {% include footer.html %}
+
     </div>
 
-    {% include footer.html %}
+    <script async src="{{ '/_scripts/jquery-1.11.3.min.js' | relative_url }}"></script>
+    <script async src="{{ '/_scripts/bootstrap.min.js' | relative_url }}"></script>
 
-    <script async src="{{ '/scripts/main.min.js' | relative_url }}"></script>
   <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register("{{ "/sw.js" | relative_url }}").then(function() {
@@ -23,6 +27,7 @@
     });
   }
   </script>
+
   </body>
 
 </html>

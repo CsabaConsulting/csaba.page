@@ -13,13 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: csaba.page
-email: your-email@domain.com
+title: Csaba Consulting
+author: Csaba Toth
+email: csaba.toth.us@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal PWA Page with Jekyll
+  Csaba Toth Consulting Technology Services website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nirgn975.github.io/MrCsabaToth" # the base hostname & protocol for your site
-twitter_username: MrCsabaToth
+url: "https://csaba.page/" # the base hostname & protocol for your site
+linkedin_url: in/csabatothdev/
+twitter_username: tocsa2
 github_username:  MrCsabaToth
 
 # Build settings

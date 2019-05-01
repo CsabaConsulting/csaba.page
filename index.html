@@ -2,24 +2,17 @@
 layout: default
 ---
 
-<div class="home">
+{% for post in site.posts %}
+  <div class="row featurette">
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    <div class="col-md-8 {% if thecycle == 'even' %}col-md-push-4{% endif %}">
+      <h2 class="featurette-heading">{{ post.title }}</h2>
+      {{ post.content }}
+    </div>
+    <div class="col-md-4 {% if thecycle == 'even' %}col-md-pull-8{% endif %}">
+      <img class="featurette-image img-responsive center-block img-rounded" src="/images/featurettes/{{ post.image }}" alt="{{ post.alt }}">
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- { % include example.html % } -->
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+  <hr class="featurette-divider">
+{% endfor %}

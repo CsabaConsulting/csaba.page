@@ -1,4 +1,5 @@
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,11 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/css/carousel.css" | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-    <meta name="theme-color" content="#424242">
+    <meta name="theme-color" content="#b8f3f9">
 </head>
