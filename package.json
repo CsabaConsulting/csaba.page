@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Personal PWA Page with Jekyll",
   "scripts": {
+    "gulp": "gulp",
     "start": "gulp serve",
     "build": "gulp build",
     "deploy": "gulp deploy"
