@@ -3,7 +3,7 @@
 Thanks for looked at my humans.txt!
 
 /* TEAM */
-Developer: MrCsabaToth.
+Developer: MrCsabaToth
 Site: email
 Twitter: tocsa2
 Location: Fresno, CA
