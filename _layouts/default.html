@@ -21,8 +21,10 @@
 
   <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("{{ "/sw.js" | relative_url }}").then(function() {
-      console.log("Service Worker Registered");
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}").then(function() {
+        console.log("Service Worker Registered");
+      });
     });
   }
   </script>

@@ -24,7 +24,6 @@ linkedin_url: in/csabatothdev/
 twitter_username: tocsa2
 github_username:  MrCsabaToth
 
-
 # Service Worker
 workbox:
   sw_src_filepath: sw.js
@@ -32,8 +31,7 @@ workbox:
   precache_recent_posts_num: 10
   precache_glob_patterns:
     - "css/*.css"
-    - "js/main.js"
-
+    - "js/*.js"
 
 # Build settings
 markdown: kramdown
