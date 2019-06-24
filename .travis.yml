@@ -26,6 +26,7 @@ install:
   - sh -e /etc/init.d/xvfb start
 
 script:
+  # - bundle exec jekyll build
   - npm run build
   - cd _site && ws&
   - lighthouse http://127.0.0.1:8000 --output=json --output-path=./validate/log.json

@@ -24,19 +24,32 @@ linkedin_url: in/csabatothdev/
 twitter_username: tocsa2
 github_username:  MrCsabaToth
 
+
+# Service Worker
+workbox:
+  sw_src_filepath: sw.js
+  sw_dest_filename: sw.js
+  precache_recent_posts_num: 10
+  precache_glob_patterns:
+    - "css/*.css"
+    - "js/main.js"
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty
-exclude: [
-  "node_modules",
-  "LICENSE",
-  "package.json",
-  "README.md",
-  "Gemfile",
-  "gulpfile.babel.js",
-  ".babelrc",
-  ".gitignore",
-  "sass",
-  "scss",
-  "validate"
-]
+exclude:
+  - "node_modules"
+  - "LICENSE"
+  - "package.json"
+  - "README.md"
+  - "Gemfile"
+  - "gulpfile.babel.js"
+  - ".babelrc"
+  - ".gitignore"
+  - "sass"
+  - "scss"
+  - "validate"
+plugins:
+  - jekyll-minifier
+  - jekyll-workbox-plugin
