@@ -30,8 +30,11 @@ workbox:
   sw_dest_filename: sw.js
   precache_recent_posts_num: 10
   precache_glob_patterns:
-    - "css/*.css"
-    - "js/*.js"
+    - "index.html"
+    - "css/bootstrap.min.css"
+    - "css/carousel.min.css"
+    - "js/bootstrap-native.min.js"
+    - "js/polyfill.min.js"
 
 # Build settings
 markdown: kramdown
