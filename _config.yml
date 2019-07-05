@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Csaba Consulting
+title: Csaba Toth
 author: Csaba Toth
 email: csaba.toth.us@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -33,8 +33,8 @@ workbox:
     - "index.html"
     - "css/bootstrap.min.css"
     - "css/carousel.min.css"
-    - "js/bootstrap-native.min.js"
-    - "js/polyfill.min.js"
+    - "js/jquery-3.3.1.slim.min.js"
+    - "js/bootstrap.bundle.min.js"
 
 # Build settings
 markdown: kramdown

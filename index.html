@@ -2,15 +2,16 @@
 layout: default
 ---
 
+<div class="featurette-divider"></div>
 {% for post in site.posts %}
   <div class="row featurette">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    <div class="col-md-8 {% if thecycle == 'even' %}col-md-push-4{% endif %}">
+    <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
       <h2 class="featurette-heading">{{ post.title }}</h2>
       {{ post.content }}
     </div>
-    <div class="col-md-4 {% if thecycle == 'even' %}col-md-pull-8{% endif %}">
-      <img class="featurette-image img-responsive center-block img-rounded" src="/images/featurettes/{{ post.image }}" alt="{{ post.alt }}">
+    <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
+      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/featurettes/{{ post.image }}" alt="{{ post.alt }}">
     </div>
   </div>
 
