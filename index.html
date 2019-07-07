@@ -1,17 +1,20 @@
 ---
 layout: default
+has_carousel: true
+has_jumbotron: false
 ---
 
 <div class="featurette-divider"></div>
-{% for post in site.posts %}
+{% assign featurettes = site.posts | where: "category","featurette"%}
+{% for featurette in featurettes %}
   <div class="row featurette">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
-      <h2 class="featurette-heading">{{ post.title }}</h2>
-      {{ post.content }}
+      <h2 class="featurette-heading">{{ featurette.title }}</h2>
+      {{ featurette.content }}
     </div>
     <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/featurettes/{{ post.image }}" alt="{{ post.alt }}">
+      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/featurettes/{{ featurette.image }}" alt="{{ featurette.alt }}">
     </div>
   </div>
 
