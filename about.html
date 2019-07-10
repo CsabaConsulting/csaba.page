@@ -1,19 +1,19 @@
 ---
 layout: default
-has_carousel: true
+has_carousel: false
 ---
 
 <div class="featurette-divider"></div>
-{% assign featurettes = site.posts | where: "category","featurette"%}
-{% for featurette in featurettes %}
+{% assign resume_items = site.posts | where: "category","resume"%}
+{% for resume_item in resume_items %}
   <div class="row featurette">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
-      <h2 class="featurette-heading">{{ featurette.title }}</h2>
-      {{ featurette.content }}
+      <h2 class="featurette-heading">{{ resume_item.title }}</h2>
+      {{ resume_item.content }}
     </div>
     <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/featurettes/{{ featurette.image }}" alt="{{ featurette.alt }}">
+      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/resume/{{ resume_item.image }}" alt="{{ resume_item.alt }}">
     </div>
   </div>
 
