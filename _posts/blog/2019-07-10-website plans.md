@@ -11,4 +11,6 @@ Once I bought `csaba.page` I also decided to try `Netlify` for hosting. It's fre
 
 Future plans involve optimizing load by slimming down as much JavaScript and CSS as possible. Upgrading to Bootstrap 4 gets rid of the glyph icon fontset. Bootstrap 4 CSS refers to Google Montserrat font though. I'll see how this can be optimized. I will slim the JavaScript content, which currently only used for the hamburger menu and the carousel. I'm eyeing: [Materialize](https://github.com/Dogfalo/materialize), [Material UI](https://material-ui.com/), [ZURB Foundation](http://foundation.zurb.com/sites/download.html/). 
 
-I'll also keep the blog alive.
+I'll also work through improvements what Lighthouse test shows.
+
+Finally, I'll keep the blog alive.
