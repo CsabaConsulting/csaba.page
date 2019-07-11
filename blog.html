@@ -5,9 +5,7 @@ has_carousel: false
 
 {% assign blogs = site.posts | where: "category","blog"%}
 {% for blog in blogs %}
-  <h2 class="blog-heading">{{ blog.title }}</h2>
-  {{ blog.teaser }}
-  </div>
-  </div>
+  <h2 class="blog-heading"><a href="{{blog.url}}">{{ blog.title }}</a></h2>
+  <p>{{ blog.teaser }}</p>
   <hr class="featurette-divider">
 {% endfor %}
