@@ -95,7 +95,7 @@ gulp.task('serve', ['jekyll-build'], () => {
     port: 3000
   });
 
-  // Warch html changes.
+  // Watch html changes.
   gulp.watch([
     'css/**/*.css',
     'scripts/**/*.js',
@@ -178,4 +178,3 @@ gulp.task('deploy', () => {
     'revert-config'
   )
 });
-
