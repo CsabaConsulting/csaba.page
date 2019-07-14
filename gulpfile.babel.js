@@ -73,16 +73,6 @@ gulp.task('css', () => {
     .pipe(gulp.dest('_site/css'));
 });
 
-// Pug (Jade) to HTML.
-gulp.task('pug', () => {
-  return gulp.src([
-    '_includes-pug/**/*.pug',
-    '!_site/node_modules/**'
-  ])
-  .pipe($.pug())
-  .pipe(gulp.dest('_includes'));
-});
-
 // Watch change in files.
 gulp.task('serve', ['jekyll-build'], () => {
   browserSync.init({
@@ -104,9 +94,6 @@ gulp.task('serve', ['jekyll-build'], () => {
     '_posts/**/*.*',
     'index.html'
   ], ['jekyll-build', browserSync.reload]);
-
-  // Watch Pug (Jade) changes.
-  gulp.watch('_includes-pug/**/*.pug', ['pug']);
 
   // Watch JavaScript changes.
   gulp.watch('_scripts/**/*.js', ['scripts']);
@@ -137,7 +124,7 @@ gulp.task('generate-service-worker', (callback) => {
         .pipe(gulp.dest('.'));
   });
 
-gulp.task('jekyll-build', ['pug','scripts', 'scss'], $.shell.task(['jekyll build']));
+gulp.task('jekyll-build', ['scripts', 'scss'], $.shell.task(['jekyll build']));
 
 gulp.task('jekyll-build-for-deploy', $.shell.task(['jekyll build']));
 
@@ -146,7 +133,6 @@ gulp.task('build', () =>
   runSequence(
     'fix-config',
     'cleanup-build',
-    'pug',
     'scripts',
     'jekyll-build-for-deploy',
     'minify-html',
@@ -167,7 +153,6 @@ gulp.task('deploy', () => {
   runSequence(
     'fix-config',
     'cleanup-build',
-    'pug',
     'scripts',
     'jekyll-build-for-deploy',
     'minify-html',
