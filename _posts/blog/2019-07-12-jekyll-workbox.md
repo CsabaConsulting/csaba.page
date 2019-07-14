@@ -32,3 +32,5 @@ At the time of this blogpost this site currently uses Jekyll, and I saw two cand
 ```
 workbox.precaching.precacheAndRoute([]);
 ```
+
+And that's all!
