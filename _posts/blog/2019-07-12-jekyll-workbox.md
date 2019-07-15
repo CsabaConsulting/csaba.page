@@ -15,7 +15,7 @@ There's one more thing: in case you are using any static site generator framewor
 
 At the time of this blogpost this site currently uses Jekyll, and I saw two candidates (multiple choices is always a good sign): [jekyll-pwa-plugin](https://github.com/lavas-project/jekyll-pwa) or [jekyll-workbox-plugin](https://github.com/bmeurer/jekyll-workbox-plugin). Both of them seems nice, but according to [this blogpost](https://benediktmeurer.de/2018/12/06/introducing-jekyll-workbox-plugin/) I decided to go with the latter one. Since Jekyll is `RoR` (Ruby on Rails) based the "package" you need to install is a Ruby Gem. The configuration is simple, well readable (`yaml` format) and no fluff inside the expected `_config.yml` and the only other thing. I only needed to add two `JavaScript` entries
 
-1. In `default.html` 7 lines starting at [source](https://github.com/CsabaConsulting/csaba.page/blob/master/_layouts/default.html#L26):
+1. In `default.html` 7 lines starting at: [source](https://github.com/CsabaConsulting/csaba.page/blob/master/_layouts/default.html#L26)
 2. A short `sw.js` file stub ([source](https://github.com/CsabaConsulting/csaba.page/blob/master/sw.js)) with the most important placeholder `workbox.precaching.precacheAndRoute([]);`
 
 And that's all!
