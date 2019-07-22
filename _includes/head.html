@@ -11,6 +11,16 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
 
+    <link rel="preload" href="{{ "/css/bootstrap.min.css" | relative_url }}" as="style">
+    <link rel="preload" href="{{ "/css/carousel.min.css" | relative_url }}" as="style">
+    <link rel="preload" href="{{ "/js/jquery-3.3.1.slim.min.js" | relative_url }}" as="script">
+    <link rel="preload" href="{{ "/js/bootstrap.bundle.min.js" | relative_url }}" as="script">
+
+    {% if page.comments %}
+      <link rel="preload" href="//csaba.disqus.com/embed.js" as="script" crossorigin>
+      <link rel="preload" href="//csaba.disqus.com/count.js" as="script" crossorigin>
+    {% endif %}
+
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/css/carousel.min.css" | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
