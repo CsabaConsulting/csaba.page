@@ -13,18 +13,24 @@
 
     {% if page.comments %}
     <div id="disqus_thread">
-      <noscript>JavaScript is required to view 
-        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-      </noscript>
-
       <script>
         var disqus_config = function () {
           this.page.url = "{{ page.url }}";
           this.page.identifier = "{{ page.page_id }}";
+          this.page.title = "{{ page.title }}";
         };
-      </script>
     
-      <script src="//csaba.disqus.com/embed.js" data-timestamp="{{ site.time }}" async></script>
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//csaba.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', + new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+
+      <noscript>JavaScript is required to view 
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
     </div>
     {% endif %}
 
