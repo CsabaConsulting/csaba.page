@@ -3,7 +3,7 @@
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
     prefix: 'csaba.page',
-    suffix: 'v1.3',
+    suffix: 'v1.4',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
