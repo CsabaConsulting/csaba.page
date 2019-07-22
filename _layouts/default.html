@@ -11,33 +11,28 @@
       {% include carousel.html %}
     {% endif %}
 
-    {% if page.comments %}
-    <div id="disqus_thread">
-      <script>
-        var disqus_config = function () {
-          this.page.url = "{{ page.url }}";
-          this.page.identifier = "{{ page.page_id }}";
-          this.page.title = "{{ page.title }}";
-        };
-    
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//csaba.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', + new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-
-      <noscript>JavaScript is required to view 
-        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-      </noscript>
-    </div>
-    {% endif %}
-
     <div class="container marketing">
 
       {{ content }}
 
+      {% if page.comments %}
+      <div id="disqus_thread">
+        <script>
+          var disqus_config = function () {
+            this.page.url = "{{ page.url | replace:'index.html','' | absolute_url }}";
+            this.page.identifier = "{{ page.page_id }}";
+            this.page.title = "{{ page.title }}";
+          };
+        </script>
+  
+        <script src="//csaba.disqus.com/embed.js" data-timestamp="{{ date | date: "%s" | times: 100 }}" async></script>
+
+        <noscript>JavaScript is required to view 
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+      {% endif %}
+  
       {% include footer.html %}
 
     </div>
