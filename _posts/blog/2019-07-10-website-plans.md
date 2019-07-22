@@ -3,6 +3,8 @@ layout: post
 title: Website details and evolution
 teaser: How I'll keep evolving this website.
 date: 2019-07-10 01:56:39 +0300
+page_id: website-plans
+comments: true
 category: blog
 ---
 When I bought `csaba.page` domain I also decided to try `Netlify` for hosting. It's free just like as `GitHub` static page hosting (a.k.a. `gh-pages`) and it's also `Jekyll` capable. The earlier version was truly one page, however I'll start blogging. For the original page I used Bootstrap 3 Native version which is a jQuery-less Bootstrap implementation. Now that I have a Blog section and I added About as well I needed a menu, so I had to bring back jQuery. I took the chance and upgraded to Bootstrap 4 and jQuery 3.

@@ -11,26 +11,47 @@
       {% include carousel.html %}
     {% endif %}
 
+    {% if page.comments %}
+    <div id="disqus_thread">
+      <noscript>JavaScript is required to view 
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+
+      <script>
+        var disqus_config = function () {
+          this.page.url = "{{ page.url }}";
+          this.page.identifier = "{{ page.page_id }}";
+        };
+      </script>
+    
+      <script src="//csaba.disqus.com/embed.js" data-timestamp="{{ site.time }}" async></script>
+    </div>
+    {% endif %}
+
     <div class="container marketing">
 
-      {{ content }}
+        {{ content }}
 
       {% include footer.html %}
 
     </div>
 
-    <script src="{{ '/js/jquery-3.3.1.slim.min.js' | relative_url }}"></script>
-    <script src="{{ '/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+    <script src="{{ "/js/jquery-3.3.1.slim.min.js" | relative_url }}"></script>
+    <script src="{{ "/js/bootstrap.bundle.min.js" | relative_url }}"></script>
 
-  <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}").then(function() {
-        console.log("Service Worker Registered");
-      });
-    });
-  }
-  </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}").then(function() {
+            console.log("Service Worker Registered");
+          });
+        });
+      }
+    </script>
+
+    {% if page.comments %}
+      <script id="dsq-count-scr" src="//csaba.disqus.com/count.js" async></script>
+    {% endif %}
 
   </body>
 

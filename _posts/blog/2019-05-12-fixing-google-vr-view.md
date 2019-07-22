@@ -3,6 +3,8 @@ layout: post
 title: Fixing Google VR View
 teaser: The Google VR View started misbehaving multiple times in the past, and since it's archived project now, I needed to roll up my sleeves to fix it.
 date: 2019-05-12 01:56:39 +0300
+page_id: fixing-google-vr-view
+comments: true
 category: blog
 ---
 Google VR View provides a way to deliver 360 images and videos to your viewers based on their device. If the person is browsing on a desktop, then he'll get an experience which some other libraries could provide as well (like [Panellum](https://pannellum.org/)). However if the visitor is using a smart phone, then it surpasses other libraries: if the phone is not in a `VR headset` then the viewer can explore the scene using the phone's orientation, and if the phone is inside a `VR headset` then the library provides an appropriate stereoscopic projection for a true 360 experience.

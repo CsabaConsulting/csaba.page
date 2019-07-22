@@ -3,6 +3,8 @@ layout: post
 title: Latest changes and plans to this site
 teaser: Follow-up on the post a week ago
 date: 2019-07-17 01:56:39 +0300
+page_id: website-progress
+comments: true
 category: blog
 ---
 The website functions but the evolution will never stop.

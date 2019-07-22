@@ -3,6 +3,8 @@ layout: post
 title: Service workers for your PWA (Progressive Web App) website
 teaser: Manifest for PWA is a no brainer, but what about service workers?
 date: 2019-07-12 01:56:39 +0300
+page_id: jekyll-workbox
+comments: true
 category: blog
 ---
 Two pillars for transforming your website into a `PWA` (`Progressive Web App`) are the manifest and having service workers. (Besides that it's better if your website is repsonsive, follows `PRPL` principles, but I won't go into these in the current blog post.) Manifest is kind of a no brainer, although requires some work. You need to identify the main theme color and main background color for your website, and generate various sizes of the favicon of your webiste and reference some of those from the manifest and some of them from the header meta section. There are several websites ([Example](https://tomitm.github.io/appmanifest/)) which help you to generate the series of images and the corresponding manifest and HTML meta tags.
