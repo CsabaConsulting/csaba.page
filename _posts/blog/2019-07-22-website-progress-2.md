@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disqus integration and font self hosting
-teaser: Follow-up on the post a week ago
+teaser: Follow-up on the latest webite progress
 date: 2019-07-22 01:56:39 +0300
 page_id: website-progress-2
 comments: true
