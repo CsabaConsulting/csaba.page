@@ -7,7 +7,7 @@ page_id: fixing-google-vr-view
 comments: true
 category: blog
 ---
-Google VR View provides a way to deliver 360 images and videos to your viewers based on their device. If the person is browsing on a desktop, then he'll get an experience which some other libraries could provide as well (like [Panellum](https://pannellum.org/)). However if the visitor is using a smart phone, then it surpasses other libraries: if the phone is not in a `VR headset` then the viewer can explore the scene using the phone's orientation, and if the phone is inside a `VR headset` then the library provides an appropriate stereoscopic projection for a true 360 experience.
+Google VR View provides a way to deliver 360 images and videos to your viewers based on their device. If the person is browsing on a desktop, then he'll get an experience which some other libraries could provide as well (like [Panellum](https://pannellum.org/)). However when the visitor is using a smartphone, then it surpasses other libraries: if the phone is not in a `VR headset` then the viewer can explore the scene using the phone's orientation, and if the phone is inside a `VR headset` then the library provides an appropriate stereoscopic projection for a true 360 experience.
 
 Google has a nice Code Lab which walks you through serving both 360 images and videos: [Code Lab](https://codelabs.developers.google.com/codelabs/vr_view_101/index.html?index=..%2F..index#0). Here is the developer page for the technology (see the VR View for Web section): [360° Media](https://developers.google.com/vr/discover/360-degree-media). I embraced the VR View for Web and created a concept page: [website](https://mrcsabatoth.github.io/magicvr/), [source](https://github.com/MrCsabaToth/magicvr).
 
@@ -19,7 +19,7 @@ Based on that I created several websites commemorating some events, like:
 
 As you can see these websites use the same concept: they are based on a `material style` theme, they use Bootstrap and they are `Jekyll` based and hosted by `GitHub`. Each scene has a 360 image and 360 video snippet. The video is provided by YouTube but the image is served by the Google VR View for Web. For the latter I went for self hosting (since it's not advisable to host anything from GitHub raw links, for one it may not provide the proper MIME type), and each site has a copy of the necessary files. Just as listed in the README of Google's repository: [VR View files](https://github.com/googlearchive/vrview/tree/gh-pages#downloading-files). As you see the whole repository is now in an archived state.
 
-Since I created the first 360 website it occured to me multiple times that I wanted to quickly brag about + demo them on my phone. However my phone showed clearly some bug regarding the accelerometer reading because the view didn't smoothly follow the orinetation of the phone but it was swirling around violently.
+Since I created the first 360 website it occured to me multiple times that I wanted to quickly brag about + demo them on my phone. However my phone showed clearly some bug regarding the accelerometer reading because the view didn't smoothly follow the orientation of the phone but it was swirling around violently.
 
 * [2017 January](https://github.com/SportsBoard/ABCA2017/commit/e419af868058c438d7f0756b240ef3b5076a2f1c)
 * [2018 January](https://github.com/SportsBoard/ABCA2017/commit/d0c53a76e39ca1de0efde6aac40279bb273b9372)
