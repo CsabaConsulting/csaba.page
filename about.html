@@ -13,7 +13,12 @@ has_carousel: false
       {{ resume_item.content }}
     </div>
     <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/resume/{{ resume_item.image }}" alt="{{ resume_item.alt }}">
+      <picture>
+        <source type="image/webp" srcset="/images/resume/{{ resume_item.webp }}">
+        <source type="{{ resume_item.image_mime }}" srcset="/images/resume/{{ resume_item.image }}">
+        <img class="featurette-image img-fluid d-block mx-auto rounded"
+             src="/images/resume/{{ resume_item.image }}" alt="{{ resume_item.alt }}">
+      </picture>
     </div>
   </div>
 

@@ -1,6 +1,10 @@
 - title: Software Engineering
   image: banner1.png
+  image_mime: image/png
+  webp: banner1.webp
   alt: Services banner 1
 - title: System Architecture
   image: banner2.png
+  image_mime: image/png
+  webp: banner2.webp
   alt: Services banner 2

@@ -13,7 +13,12 @@ has_carousel: true
       {{ featurette.content }}
     </div>
     <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <img class="featurette-image img-fluid d-block mx-auto rounded" src="/images/featurettes/{{ featurette.image }}" alt="{{ featurette.alt }}">
+      <picture>
+        <source type="image/webp" srcset="/images/featurettes/{{ featurette.webp }}">
+        <source type="{{ featurette.image_mime }}" srcset="/images/featurettes/{{ featurette.image }}">
+        <img class="featurette-image img-fluid d-block mx-auto rounded"
+             src="/images/featurettes/{{ featurette.image }}" alt="{{ featurette.alt }}">
+      </picture>
     </div>
   </div>
 

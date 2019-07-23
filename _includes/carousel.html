@@ -3,7 +3,12 @@
     {% assign banners = site.data.banners %}
     {% for banner in banners %}
       <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
-        <img class="d-block w-100" src="/images/banners/{{ banner.image }}" alt="{{ banner.alt }}">
+        <picture>
+          <source type="image/webp" srcset="/images/banners/{{ banner.webp }}">
+          <source type="{{ banner.image_mime }}" srcset="/images/banners/{{ banner.image }}">
+          <img class="d-block w-100"
+               src="/images/banners/{{ banner.image }}" alt="{{ banner.alt }}">
+        </picture>
         <div class="carousel-caption d-none d-md-block">
           <h1>{{ banner.title }}</h1>
         </div>
