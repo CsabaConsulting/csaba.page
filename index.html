@@ -4,7 +4,7 @@ has_carousel: true
 ---
 
 <div class="featurette-divider"></div>
-{% assign featurettes = site.posts | where: "category","featurette"%}
+{% assign featurettes = site.posts | where: "category","featurette" %}
 {% for featurette in featurettes %}
   <div class="row featurette">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}

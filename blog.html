@@ -3,7 +3,7 @@ layout: default
 has_carousel: false
 ---
 
-{% assign blogs = site.posts | where: "category","blog"%}
+{% assign blogs = site.posts | where: "category","blog" %}
 {% for blog in blogs %}
   <h2 class="blog-heading"><a href="{{blog.url}}">{{ blog.title }}</a></h2>
   <p>{{ blog.teaser }}</p>
