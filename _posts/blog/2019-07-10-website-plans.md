@@ -11,7 +11,7 @@ When I bought `csaba.page` domain I also decided to try `Netlify` for hosting. I
 
 [Website source code](https://github.com/CsabaConsulting/csaba.page/commits/master)
 
-Future plans involve optimizing load by slimming down as much JavaScript and CSS as possible. Upgrading to Bootstrap 4 gets rid of the glyph icon fontset. Bootstrap 4 CSS refers to Google Montserrat font though. I'll see how this can be optimized. I will slim the JavaScript content, which currently only used for the hamburger menu and the carousel. I'm eyeing: [Materialize](https://github.com/Dogfalo/materialize), [Material UI](https://material-ui.com/), [ZURB Foundation](http://foundation.zurb.com/sites/download.html/). 
+Future plans involve optimizing load by slimming down as much JavaScript and CSS as possible. Upgrading to Bootstrap 4 got rid of the glyph icon fontset. Bootstrap 4 CSS however refers to Google Montserrat font. I'll see how this can be optimized. I will slim the JavaScript content, which currently only used for the hamburger menu and the carousel. I'm eyeing: [Materialize](https://github.com/Dogfalo/materialize), [Material UI](https://material-ui.com/), [ZURB Foundation](http://foundation.zurb.com/sites/download.html/). 
 
 I'm contemplating to try [Eleventy](https://www.11ty.io/) (inspired by [benediktmeurer.de](https://github.com/bmeurer/benediktmeurer.de/)) instead of `Jekyll` along with a headless CMS API for blog posts.
 
