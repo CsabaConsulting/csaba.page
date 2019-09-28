@@ -1,0 +1,81 @@
+// Material Theming
+// After importing all MDC Web components, apply mixins to theme individual components
+
+// .mdc-button {
+//   @include mdc-button-shape-radius(50%);
+// }
+
+// Top app bar
+
+.component-wrapper .mdc-top-app-bar {
+  @include mdc-elevation(4);
+  position: relative;
+  z-index: 1;
+
+  &:not(.mdc-top-app-bar--short) {
+    width: 100%;
+  }
+}
+
+// Card
+
+.mdc-card {
+  width: 100%;
+  color: $mdc-theme-on-surface;
+
+  .demo-card__primary {
+    padding: 1rem;
+  }
+
+  .demo-card__title,
+  .demo-card__subtitle {
+    margin: 0;
+  }
+
+  .demo-card__secondary {
+    padding: 0 1rem 8px;
+    opacity: 0.87;
+  }
+}
+
+// Menu
+
+.mdc-menu-surface--anchor > .mdc-menu {
+  position: relative;
+  z-index: 1;
+}
+
+// Drawer
+
+.drawer-component-wrapper {
+  background: rgba(0, 0, 0, 0.3);
+
+  .mdc-drawer {
+    @include mdc-elevation(16);
+
+    .mdc-drawer__content {
+      padding: 0;
+    }
+  }
+}
+
+// Snackbar
+
+.mdc-snackbar {
+  position: relative;
+  margin: 0;
+  justify-content: start;
+  z-index: 1;
+}
+
+// Dialog
+
+.mdc-dialog {
+  position: relative;
+  justify-content: start;
+  z-index: 1;
+
+  .mdc-dialog__surface {
+    max-width: 100%;
+  }
+}
