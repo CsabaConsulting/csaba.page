@@ -23,6 +23,10 @@ url: "https://csaba.page/" # the base hostname & protocol for your site
 linkedin_url: in/csabatothdev/
 twitter_username: tocsa2
 github_username:  MrCsabaToth
+sass:
+  load_paths:
+    - _sass
+    - bower_components/foundation/scss
 
 # Service Worker
 workbox:
