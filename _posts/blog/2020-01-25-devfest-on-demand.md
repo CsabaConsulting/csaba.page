@@ -7,9 +7,9 @@ page_id: devfest-on-demand
 comments: true
 category: blog
 ---
-`Valley Devfest 2019` was a great conference in my opinion. We hired `GMAC` to record 15 of our sessions. This was Andrew's idea and although it might have seemed expensive from some angles, it turned out to be an excellent one (see later). The service included editing and each camera had a videographer who were actively zooming to the presenter or the demonstrations. Overall 15 sessions were recorded plus the opening and closing keynotes (see a full lits later).
+[Valley DevFest 2019](https://valleydevfest.com/sessions) was a great conference in my opinion. We hired `GMAC` to record 15 of our sessions. This was Andrew's idea and it turned out to be an excellent one (although it might have seemed expensive from some angles, it well worth it in the end). The video service included editing and each camera had a videographer who were actively zooming to the presenter or the demonstrations. Overall 15 sessions were recorded plus the opening and closing keynotes (see a full lits later).
 
-It took several hours later in 2019 to nominate all of our talks and complete submission to the so-called [DevFest on demand 2019 conference](https://devfest.withgoogle.com/ondemand) which is an on-line edition of DevFests and contains a collection of the best talks judged by Google out of all the several hundreds of DevFests occured all around the world. The good news is that 6 of our talks got featured! You can spot them easily if you filter by North America region on the [DevFest on demand 2019 website](https://devfest.withgoogle.com/ondemand), but I'll list them all here for completeness:
+Later in 2019 I nominated all of [Valley DevFest 2019](https://valleydevfest.com/sessions)'s talks and completed submission to the [DevFest on demand 2019 conference](https://devfest.withgoogle.com/ondemand) which is an on-line edition of DevFests. It contains a collection of the best talks out of all the several hundreds of DevFests occured all around the world judged by Google. Good news is that 6 of our talks got featured! You can spot them easily if you filter by North America region on the [DevFest on demand 2019 website](https://devfest.withgoogle.com/ondemand), but I'll list them all here for completeness:
 
 * [Rob Aguilera: Frontend architecture: Decoupling apps from frameworks](https://devfest.withgoogle.com/events/frontendarchitecture)
 * [Andres Lopez: Hacking life with BLE](https://devfest.withgoogle.com/events/hackinglife-ble)
@@ -40,4 +40,4 @@ Here is the list of all [Valley DevFest 2019](https://valleydevfest.com/sessions
 16. [Mia Kay Bentzien: Bring your Designs to Life : From 3D Sculpting to 3D Printing](https://www.youtube.com/watch?v=Lg-nL8OlFac&list=PLfLYzWZuIvXIgmR6oCaYYA-Ez8agOrHXw&index=16)
 17. [Andrew Runner: Closing Keynote](https://www.youtube.com/watch?v=nsnoI2brsz4&list=PLfLYzWZuIvXIgmR6oCaYYA-Ez8agOrHXw&index=17)
 
-I'm super proud of all of our speakers (not just the recorded sessions), and especially good job for those who made it to the on demand selection. Excellent, I'm super stoked!
+I'm super proud of all of our speakers (not just the recorded sessions), and especially good job for those who made it to the on demand selection.
