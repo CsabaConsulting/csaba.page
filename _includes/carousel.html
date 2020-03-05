@@ -2,7 +2,7 @@
   <div class="carousel-inner" role="listbox">
     {% assign banners = site.data.banners %}
     {% for banner in banners %}
-      <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
+      <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}" role="option">
         <picture>
           <source type="image/webp" srcset="/images/banners/{{ banner.webp }}">
           <source type="{{ banner.image_mime }}" srcset="/images/banners/{{ banner.image }}">
