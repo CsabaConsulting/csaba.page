@@ -1,6 +1,6 @@
 {
   "name": "csaba.page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal PWA Page with Jekyll",
   "scripts": {
     "gulp": "gulp",
