@@ -6,5 +6,4 @@
   X-Content-Type-Options: nosniff
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Referrer-Policy: no-referrer-when-downgrade
-  Feature-Policy: accelerometer: 'none';unsized-media 'none';ambient-light-sensor: 'none';camera: 'none';encrypted-media: 'none';fullscreen: 'self';geolocation: 'none';gyroscope: 'none';magnetometer: 'none';picture-in-picture *;microphone: 'none';midi: 'none';speaker: 'none';sync-xhr: 'self';usb: 'none';vr: 'self'
-  # cache-control: max-age=0,no-cache,no-store,must-revalidate
+  Feature-Policy: accelerometer: none;unsized-media none;ambient-light-sensor: none;camera: none;encrypted-media: none;fullscreen: self;geolocation: none;gyroscope: none;magnetometer: none;picture-in-picture *;microphone: none;midi: none;speaker: none;sync-xhr: self;usb: none;vr: self
