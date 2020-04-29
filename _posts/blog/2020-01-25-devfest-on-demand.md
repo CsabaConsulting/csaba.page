@@ -7,7 +7,7 @@ page_id: devfest-on-demand
 comments: true
 category: blog
 ---
-[Valley DevFest 2019](https://valleydevfest.com/sessions) was a great conference in my opinion. We hired `GMAC` to record 15 of our sessions. This was Andrew's idea and it turned out to be an excellent one (although it might have seemed expensive from some angles, it well worth it in the end). The video service included editing and each camera had a videographer who were actively zooming to the presenter or the demonstrations. Overall 15 sessions were recorded plus the opening and closing keynotes (see a full lits later).
+[Valley DevFest 2019](https://valleydevfest.com/sessions) was a great conference in my opinion. We hired _GMAC_ to record 15 of our sessions. This was Andrew's idea and it turned out to be an excellent one (although it might have seemed expensive from some angles, it well worth it in the end). The video service included editing and each camera had a videographer who were actively zooming to the presenter or the demonstrations. Overall 15 sessions were recorded plus the opening and closing keynotes (see a full lits later).
 
 Later in 2019 I nominated all of [Valley DevFest 2019](https://valleydevfest.com/sessions)'s talks and completed submission to the [DevFest on demand 2019 conference](https://devfest.withgoogle.com/ondemand) which is an on-line edition of DevFests. It contains a collection of the best talks out of all the several hundreds of DevFests occured all around the world judged by Google. Good news is that 6 of our talks got featured! You can spot them easily if you filter by North America region on the [DevFest on demand 2019 website](https://devfest.withgoogle.com/ondemand), but I'll list them all here for completeness:
 

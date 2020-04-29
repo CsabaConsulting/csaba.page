@@ -11,7 +11,7 @@ The website functions but the evolution will never stop.
 
 I mentioned the [Google font problem](https://css-tricks.com/google-fonts-and-font-display/) in my previous blog post. I dig deeper and it turned out that the best way is to self host the fonts, see [Reference 1](https://ashton.codes/preload-google-fonts-using-resource-hints/), [Reference 2](https://medium.com/clio-calliope/making-google-fonts-faster-aadf3c02a36d). The good news is that for downloading there's a nice tool written by Mario Ranftl which is a great help: [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts?source=post_page---------------------------).
 
-The other recent change is the integration of Disqus. I tried to apply `preload` but had to give up on that because the browser was warning and the `crossorigin` tag was causing trouble as well.
+The other recent change is the integration of Disqus. I tried to apply _preload_ but had to give up on that because the browser was warning and the _crossorigin_ tag was causing trouble as well.
 
 New test runs regarding the site:
 
@@ -22,6 +22,6 @@ New test runs regarding the site:
 TODO:
 
 1. Image optimization, [Cloudinary](https://webspeedtest.cloudinary.com/results/190722_3C_bd48d7a50edb0585023c655145414915) is a good point to start. I'm afraid I won't use WebP, because Safari doesn't seem to support it yet.
-2. Ditch `jQuery` + `Bootstrap` and migrate to `MDL` (Material Design Lite).
+2. Ditch _jQuery_ + _Bootstrap_ and migrate to _MDL_ (Material Design Lite).
 3. Cut JS and SCSS fluff from the get go and use post-processing unused CSS/JS removal
-4. Headless CMS [headlesscms.org](https://headlesscms.org/). I'm exploring Google Spreadsheet / Docs as possible headless CMS. Especially that later I'll use my experience to migrate the [gdgfresno.com](https://gdgfresno.com/) website form `Squarespace`.
+4. Headless CMS [headlesscms.org](https://headlesscms.org/). I'm exploring Google Spreadsheet / Docs as possible headless CMS. Especially that later I'll use my experience to migrate the [gdgfresno.com](https://gdgfresno.com/) website form _Squarespace_.
