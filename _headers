@@ -1,7 +1,7 @@
 /*
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src: 'self' https://csaba.disqus.com 'unsafe-inline' 'unsafe-eval'; style-src: 'self'; img-src: 'self'; font-src: 'self'; object-src: 'none'; frame-ancestors https://www.facebook.com https://www.instagram.com https://www.linkedin.com https://www.twitter.com
+  Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src: 'self' https://csaba.disqus.com https://csabadisqus.github.io https://referrer.disqus.com https://www.google.com https://csaba-page.cdn.ampproject.org 'unsafe-inline' 'unsafe-eval'; style-src: 'self'; img-src: 'self'; font-src: 'self'; object-src: 'none'; frame-ancestors https://csaba-page.cdn.ampproject.org https://www.google.com/ https://www.facebook.com https://www.instagram.com https://www.linkedin.com https://www.twitter.com
   X-Content-Type-Options: nosniff
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Referrer-Policy: no-referrer-when-downgrade
