@@ -1,5 +1,9 @@
 // sw.js
 
+// AMP
+importScripts('https://cdn.ampproject.org/sw/amp-sw.js');
+AMP_SW.init();
+
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
     prefix: 'csaba.page',
