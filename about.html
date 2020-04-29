@@ -3,24 +3,31 @@ layout: default
 has_carousel: false
 ---
 
-<div class="featurette-divider"></div>
 {% assign resume_items = site.posts | where: "category","resume" %}
 {% for resume_item in resume_items %}
-  <div class="row featurette">
+  <article class="card card-bottom row" itemscope itemtype="http://schema.org/BlogPosting" role="article">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
-      <h2 class="featurette-heading">{{ resume_item.title }}</h2>
+      <h2>{{ resume_item.title }}</h2>
       {{ resume_item.content }}
     </div>
     <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <picture>
-        <source type="image/webp" srcset="/images/resume/{{ resume_item.webp }}">
-        <source type="{{ resume_item.image_mime }}" srcset="/images/resume/{{ resume_item.image }}">
-        <img class="featurette-image img-fluid d-block mx-auto rounded"
-             src="/images/resume/{{ resume_item.image }}" alt="{{ resume_item.alt }}">
-      </picture>
+      <amp-img
+        alt="{{ resume_item.alt }}"
+        width="350"
+        height="350"
+        layout="responsive"
+        src="/images/resume/{{ resume_item.webp }}"
+      >
+        <amp-img
+          alt="{{ resume_item.alt }}"
+          fallback
+          width="350"
+          height="350"
+          layout="responsive"
+          src="/images/resume/{{ resume_item.image }}"
+        ></amp-img>
+      </amp-img>
     </div>
-  </div>
-
-  <hr class="featurette-divider">
+  </article>
 {% endfor %}

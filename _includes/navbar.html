@@ -1,23 +1,41 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+<header
+  {% if page.has_carousel %}
+    class="row"
+  {% else %}
+    class="row header-margin-bottom"
+  {% endif %}
+  >
+  <button id="hamburger" on="tap:sidebar_menu.toggle" class="btn--raised btn--purple">&equiv;</button>
+  <a id="brand" href=".">
+    <h1>{{ site.title }}</h1>
+  </a>
+  <div id="menu_toolbar" class="center"></div>
+</header>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+<amp-sidebar id="sidebar_menu" layout="nodisplay">
+  <h3>Menu <button on="tap:sidebar_menu.close" class="btn--raised btn--purple" aria-label="close sidebar">✕</button></h3>
+  <nav toolbar="(min-width: 576px)" toolbar-target="menu_toolbar" role="navigation">
+    <ul>
       {% assign links = site.data.navigation %}
       {% for link in links %}
-        {% assign class = nil %}
-        {% if page.url contains link.url or page.url == "/" and link.url == "index" %}
-          {% assign class = 'active' %}
-        {% endif %}
-        <li class="nav-item {{ class }}">
-          <a class="nav-link" href="/{{ link.url }}/">{{ link.title }}</a>
-        </li>
+        <li><a href="/{{ link.url }}/">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
-  </div>
-</nav>
+  </nav>
+  <ul>
+    <amp-social-share
+      type="linkedin"
+      width="40"
+      height="40"
+    >
+    </amp-social-share>
+    <amp-social-share
+      type="twitter"
+      width="40"
+      height="40"
+    >
+    </amp-social-share>
+    <li><a href="#page_top" on="tap:page_top.scrollTo">Back to top</a></li>
+    <li><a href="https://github.com/{{ site.github_repo }}">Source code</a></li>
+  </ul>
+</amp-sidebar>

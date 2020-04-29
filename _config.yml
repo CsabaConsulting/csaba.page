@@ -26,6 +26,7 @@ github_username:  MrCsabaToth
 github_repo: CsabaConsulting/csaba.page
 organization: Csaba Consulting
 logo: "/images/favicons/android-chrome-256x256.png"
+gtag: "UA-86563829-4"
 
 # Service Worker
 workbox:
