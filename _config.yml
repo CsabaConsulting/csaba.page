@@ -23,6 +23,9 @@ url: "https://csaba.page/" # the base hostname & protocol for your site
 linkedin_url: in/csabatothdev/
 twitter_username: tocsa2
 github_username:  MrCsabaToth
+github_repo: CsabaConsulting/csaba.page
+organization: Csaba Consulting
+logo: "/images/favicons/android-chrome-256x256.png"
 
 # Service Worker
 workbox:
@@ -31,11 +34,7 @@ workbox:
   precache_recent_posts_num: 10
   precache_glob_patterns:
     - "index.html"
-    - "css/bootstrap.min.css"
-    - "css/carousel.min.css"
-    - "js/jquery-3.4.1.slim.min.js"
-    - "js/bootstrap.bundle.min.js"
-    - "fonts/ibm-plex-sans-v7-latin-ext-regular.woff2"
+    - "fonts/ibm-plex-400.woff2"
 
 # Build settings
 markdown: kramdown
@@ -55,3 +54,6 @@ exclude:
 plugins:
   - jekyll-minifier
   - jekyll-workbox-plugin
+
+sass:
+  style: compressed
