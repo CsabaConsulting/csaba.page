@@ -7,7 +7,7 @@ page_id: flutter-clock-follow-up
 comments: true
 category: blog
 ---
-One advantage of being part of the Android ecosystem is that you have a lot of freedom about modifying your gadgets including developing your own solutions. Someone can develop for the iOS platform as well for sure, but Apple requires $100/year ($300 for enterprise) developer fee (vs one time $25 fee of Google Play developer account).
+One advantage of being part of the _Android_ ecosystem is that you have a lot of freedom about modifying your gadgets including developing your own solutions. Someone can develop for the iOS platform as well for sure, but Apple requires $100/year ($300 for enterprise) developer fee (vs one time $25 fee of Google Play developer account).
 
 I'm in a long time journey of finding an ideal smart fitness watch. I tried Garmin before. I had [FitBit Surge](https://www.fitbit.com/pl/shop/surge) from Fresno REI Garage Sale, which had a great GPS and wrist HR. But it could hardly record more than 7-8 hour long activity, and at that time I was picking up longer and longer ultra runs, including a 24 hour timed ultra run. So I purchased a used [SUUNTO 9](https://www.suunto.com/en-us/suunto-collections/suunto-9/), because that has plenty enough hours to record. Unfortunately both the GPS and the HR performance of that very expensive _SUUNTO 9_ is sub-par. Sub-par to the point that it ruined one of my _FKT attempt's_ in the Yosemite. It's also pretty heavy, but that's understandable if you have a bigger battery. I sold it on eBay and purchased a [Polar M430](https://www.polar.com/us-en/products/sport/M430-gps-running-watch) at the post-Christmas REI Garage Sale (at REI Berkeley), which has obviously excellent wrist HR capability (Polar is in the HR business for a long time) and very good GPS as well. It's also fairly light weight, but that comes with a price: it cannot not record activity (with wrist HR and GPS on) too much longer than 3 hours workout, so yet again I started to keep an eye out for a watch.
 
@@ -29,4 +29,4 @@ One advantage of having a _WearOS_ watch is the plethora of Watch Faces. However
   - It only consist of complications, complete freedom of configurability
   - A main goal is to preserve battery and also decrease installation size, so there's no background image. Resources are vectorial.
 
-Let me know what you think below!
+Let me know what you think about them!
