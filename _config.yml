@@ -46,11 +46,8 @@ exclude:
   - "package.json"
   - "README.md"
   - "Gemfile"
-  - "gulpfile.babel.js"
   - ".babelrc"
   - ".gitignore"
-  - "sass"
-  - "scss"
   - "validate"
 plugins:
   - jekyll-minifier
