@@ -5,7 +5,7 @@ has_carousel: false
 
 {% assign blogs = site.posts | where: "category","blog" %}
 {% for blog in blogs %}
-  <article class="card card-bottom row" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+  <article class="card card-bottom row" role="article">
     <a href="{{blog.url}}">
       <div class="col-lg-12">
         <h2>{{ blog.title }}</h2>

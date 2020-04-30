@@ -5,7 +5,7 @@ has_carousel: true
 
 {% assign featurettes = site.posts | where: "category","featurette" %}
 {% for featurette in featurettes %}
-  <article class="card card-bottom row" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+  <article class="card card-bottom row" role="article">
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
       <h2>{{ featurette.title }}</h2>
