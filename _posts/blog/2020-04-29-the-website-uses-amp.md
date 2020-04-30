@@ -35,4 +35,4 @@ I'll try to summarize what steps I took to arrive to the current design:
 * I paid attention to load the _amp-carousel_ on the landing page and the _Disqus_ AMP for blog post pages. The AMP verifier helps you to point out if you include something you don't actually use.
 * I made size optimizations wherever I could, like even shortening my custom hosted font file names.
 
-The big question: the numbers. Was the first display or load time improved, how does the new AMP version fare in Lighthouse tests. I certainly don't have _JavaScript_ now, and less than 20 KB _CSS_, but _AMP_ means some script and style load. I'll analyze that in my next post.
+The big question is: how are the numbers? Did the first display or load time improve? How does the new AMP version fare in Lighthouse tests? I certainly don't have _JavaScript_ now, and less than 20 KB _CSS_, but _AMP_ means some script and style load. I'll analyze that in my next post.
