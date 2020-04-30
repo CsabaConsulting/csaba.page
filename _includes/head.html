@@ -25,7 +25,11 @@
   <script type="application/ld+json">
     {% include metadata.json %}
   </script>
-  
+
+  {% if page.comments %}
+  <meta name="amp-script-src" content="sha384-OLBgp1GsljhM2TJ-sbHjaiH9txEUvgdDTAzHv2P24donTt6_529l-9Ua0vFImLlb"/>
+  {% endif %}
+
   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
