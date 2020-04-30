@@ -6,7 +6,7 @@
   {% endif %}
   >
   <button id="hamburger" on="tap:sidebar_menu.toggle" class="btn--raised btn--purple">&equiv;</button>
-  <a id="brand" href=".">
+  <a id="brand" href="/">
     <h1>{{ site.title }}</h1>
   </a>
   <div id="menu_toolbar" class="center"></div>
@@ -18,7 +18,7 @@
     <ul>
       {% assign links = site.data.navigation %}
       {% for link in links %}
-        <li><a href="/{{ link.url }}/">{{ link.title }}</a></li>
+        <li><a href="/{% if link.url != 'index' %}{{ link.url }}/{% endif %}">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>

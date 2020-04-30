@@ -14,7 +14,7 @@ Google has a nice Code Lab which walks you through serving both 360 images and v
 Based on that I created several websites commemorating some events, like:
 
   * Bitwise South Stadium 360 quick tour: [website](https://gdgfresno.github.io/BWSS360tour/), [source](https://github.com/gdgfresno/BWSS360tour)
-  * SportsBoard's tour to the 2017 ABCA in Anaheim: [website](https://sportsboard.github.io/ABCA2017/), [source](https://github.com/gdgfresno/ABCA2017)
+  * SportsBoard's tour to the 2017 ABCA in Anaheim: [website](https://sportsboard.github.io/ABCA2017/), [source](https://github.com/SportsBoard/ABCA2017)
   * GDG Fresno's 2018 Google Plex visit: [website](https://gdgfresno.github.io/GoogleTrip2018/), [source](https://github.com/gdgfresno/GoogleTrip2018)
 
 As you can see these websites use the same concept: they are based on a _material styled_ Jekyll theme, they use Bootstrap and hosted on _GitHub_. Each scene has a 360 image and 360 video snippet. The video is provided by YouTube but the image is served by the Google VR View for Web. For the latter I went for self hosting, so each site has a copy of the necessary files. Just as listed in the README of Google's repository: [VR View files](https://github.com/googlearchive/vrview/tree/gh-pages#downloading-files). As you see the whole repository is now in an archived state.
