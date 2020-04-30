@@ -3,7 +3,7 @@ layout: post
 title: The website is redesigned and converted to AMP
 teaser: While seeking the Holy Grail I ended up converting my website to AMP
 date: 2020-04-29 23:56:39 +0300
-page_id: redesigned-and-converted-to-amp
+page_id: the-website-uses-amp
 comments: true
 category: blog
 ---

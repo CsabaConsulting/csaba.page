@@ -3,7 +3,7 @@ layout: post
 title: WearOS Watch Faces
 teaser: I didn't find watch face to my taste so I developed two of my own
 date: 2020-04-02 23:56:39 +0300
-page_id: flutter-clock-follow-up
+page_id: wearos-watch-faces
 comments: true
 category: blog
 ---
