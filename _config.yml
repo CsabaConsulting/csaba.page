@@ -35,7 +35,18 @@ workbox:
   precache_recent_posts_num: 10
   precache_glob_patterns:
     - "index.html"
+    - "fonts/ibm-plex-300.woff"
+    - "fonts/ibm-plex-300.woff2"
+    - "fonts/ibm-plex-400.woff"
     - "fonts/ibm-plex-400.woff2"
+    - "fonts/ibm-plex-500.woff"
+    - "fonts/ibm-plex-500.woff2"
+    - "fonts/ibm-plex-700.woff"
+    - "fonts/ibm-plex-700.woff2"
+    - "images/banners/banner1.png"
+    - "images/banners/banner1.webp"
+    - "images/banners/banner2.png"
+    - "images/banners/banner2.webp"
 
 # Build settings
 markdown: kramdown

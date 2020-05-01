@@ -7,7 +7,7 @@ AMP_SW.init();
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
     prefix: 'csaba.page',
-    suffix: 'v1.6',
+    suffix: 'v1.6.1',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
