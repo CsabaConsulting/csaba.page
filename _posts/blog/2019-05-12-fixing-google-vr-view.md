@@ -29,12 +29,14 @@ The first two occasions I updated the files from the Google V1R View for Web rep
 
 I yanked out the _Utils.isR7()_ [source line](https://github.com/googlearchive/vrview/blob/gh-pages/build/embed.js#L8752) and all related lines, since that is clearly some leftover of a hack from the past. Then the [meat is here](https://github.com/googlearchive/vrview/blob/gh-pages/build/embed.js#L8760):
 
-```
-  // With iOS and Firefox Android, rotationRate is reported in degrees,
-  // so we first convert to radians.
-  if (this.isIOS || this.isFirefoxAndroid) {
-    this.gyroscope.multiplyScalar(Math.PI / 180);
-  }
+```JavaScript
+
+// With iOS and Firefox Android, rotationRate is reported in degrees,
+// so we first convert to radians.
+if (this.isIOS || this.isFirefoxAndroid) {
+  this.gyroscope.multiplyScalar(Math.PI / 180);
+}
+
 ```
 
 Well, guess what: looks like mobile Chrome also needs this _deg_ -> _rad_ conversion. With that division by 180 the violent swirling went away and everything is back smooth at it was originally. Now I just have to test if it's also functioning as intended when the phone is in a VR headset.
