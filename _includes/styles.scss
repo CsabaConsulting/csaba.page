@@ -38,7 +38,8 @@
     url("/fonts/ibm-plex-700.woff") format("woff");
 }
 
-p > em {
+p > em,
+li > em {
   color: #6838b8;
 }
 
