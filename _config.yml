@@ -50,7 +50,6 @@ plugins:
   - jekyll-feed
   - jekyll-minifier
   - jekyll-workbox-plugin
-  - kramdown-converter-pdf
 
 sass:
   style: compressed
