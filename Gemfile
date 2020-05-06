@@ -17,5 +17,4 @@ group :jekyll_plugins do
   gem "jekyll-minifier", ">=0.1.10"
   gem "jekyll-sass-converter", "1.5.2"
   gem "jekyll-workbox-plugin", ">=0.0.2"
-  gem "kramdown-converter-pdf", ">=1.0.3"
 end
