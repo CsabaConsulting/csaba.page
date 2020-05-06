@@ -9,7 +9,7 @@ category: blog
 ---
 First I must state that _AMP_ these days allows _custom JavaScript_ - with limitation - by using [amp-script](https://amp.dev/documentation/guides-and-tutorials/develop/custom-javascript-tutorial/), and there's also way to have forms by [amp-form](https://amp.dev/documentation/components/amp-form/).
 
-I re-run the [three tests I ran last July for an earlier website version](/blog/2019/07/16/website-progress/). These are the results after some iterations:
+I re-run the [three tests I ran last July for an earlier website version]({% post_url blog/2019-07-17-website-progress %}). These are the results after some iterations:
 1. [Official Lighthouse](https://web.dev/measure), [results](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://csaba.page): 92 / 100 / 100 / 100
 2. [webpagetest.org Lighthouse](https://www.webpagetest.org/lighthouse), [results](https://www.webpagetest.org/result/200430_M0_b8022c27ac7d0b53b9dac80500e810a5/): 84 / 100 / 100 / 100
 3. [webhint.io scanner](https://webhint.io/scanner/), [results](https://webhint.io/scanner/4faa65f3-930d-4b96-a610-20f666d9556d): 36 hints

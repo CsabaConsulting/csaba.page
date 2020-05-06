@@ -9,7 +9,7 @@ category: blog
 ---
 I'm very sad to see that my Flutter Clock didnt' even make it to the Honorable Mentions section of the [Flutter Clock contest](https://flutter.dev/clock). I'm thinking maybe I made some mistake, like they could nto test it somehow. I look at the positive side and I'll use some experience I gathered to rewrite the _Deal-O-Round_ PlayN game with Flutter.
 
-In the [first part](/blog/2020/01/19/flutter-clock-submission/) I emphasized how I modularized the widget hierarchy, and how I used _InheritedWidget_ to communicate information between widgets. Taht post became big enough that I concentrated on the pracitces I actually used. However I went through some thinking and iterations before I got to the end result.
+In the [first part]({% post_url blog/2020-01-19-flutter-clock-submission %}) I emphasized how I modularized the widget hierarchy, and how I used _InheritedWidget_ to communicate information between widgets. Taht post became big enough that I concentrated on the pracitces I actually used. However I went through some thinking and iterations before I got to the end result.
 
 One principle I follow when I design and implement solutions is to discover existing solutions and possibly not reinvent the wheel unnecessarily. I did describe that I examined many fonts which can be good candidates for the Nixie or the VFD part. That is also one form of the "not reinvent the wheel" principle: by using a font I can save a lot of time by not deisgning every digit and letter I will use, I can just type the information by the fonts.
 
