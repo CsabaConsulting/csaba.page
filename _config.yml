@@ -38,24 +38,19 @@ workbox:
 
 # Build settings
 markdown: kramdown
-# highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
 permalink: pretty
 exclude:
-  - "node_modules"
   - "LICENSE"
-  - "package.json"
   - "README.md"
   - "Gemfile"
-  - ".babelrc"
+  - "Gemfile.lock"
   - ".gitignore"
   - "validate"
 plugins:
+  - jekyll-feed
   - jekyll-minifier
   - jekyll-workbox-plugin
+  - kramdown-converter-pdf
 
 sass:
   style: compressed
