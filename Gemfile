@@ -9,14 +9,13 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", ">= 4.0.0"
+gem "jekyll", "3.8.5"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", ">=0.13.0"
   gem "jekyll-minifier", ">=0.1.10"
-  gem "jekyll-sass-converter", ">= 2.1.0"
-  gem "jekyll-workbox-plugin", ">= 0.0.2"
-  gem "kramdown-converter-pdf", ">= 1.0.4"
-  gem "rouge", ">=3.18.0"
+  gem "jekyll-sass-converter", "1.5.2"
+  gem "jekyll-workbox-plugin", ">=0.0.2"
+  gem "kramdown-converter-pdf", ">=1.0.3"
 end
