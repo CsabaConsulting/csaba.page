@@ -1,6 +1,6 @@
 # csaba.page
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57947516-5dec-47dd-a9be-f6aaa57843fa/deploy-status)](https://app.netlify.com/sites/csaba/deploys)
+Custom Jekyll website, now using AMP.
 
 ## Prerequisites
 
