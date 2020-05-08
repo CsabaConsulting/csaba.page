@@ -1,35 +1,11 @@
----
-layout: default
-has_carousel: true
----
+﻿<!DOCTYPE html>
 
-{% assign featurettes = site.posts | where: "category","featurette" %}
-{% for featurette in featurettes %}
-  <article class="card card-bottom row" role="article">
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    <div class="col-md-8 {% if thecycle == 'even' %}order-md-2{% endif %}">
-      <h2>{{ featurette.title }}</h2>
-      {{ featurette.content }}
-    </div>
-    <div class="col-md-4 {% if thecycle == 'even' %}order-md-1{% endif %}">
-      <amp-img
-        alt="{{ featurette.alt }}"
-        width="350"
-        height="350"
-        layout="responsive"
-        noloading
-        src="/images/featurettes/{{ featurette.webp }}"
-      >
-        <amp-img
-          alt="{{ featurette.alt }}"
-          fallback
-          width="350"
-          height="350"
-          layout="responsive"
-          noloading
-          src="/images/featurettes/{{ featurette.image }}"
-        ></amp-img>
-      </amp-img>
-    </div>
-  </article>
-{% endfor %}
+<html>
+  <head>
+    <meta http-equiv="refresh" content="2;url=https://csaba.page" />
+    <title>Csaba Consulting Page Has Been Moved</title>
+  </head>
+  <body>
+    Csaba Consulting's page has been moved. Click <a href="https://caba.page">here</a> to go to the new page.
+  </body>
+</html>
