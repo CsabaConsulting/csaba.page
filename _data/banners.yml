@@ -1,10 +1,29 @@
 - title: Software Engineering
-  image: banner1.png
-  image_mime: image/png
-  webp: banner1.webp
+  name: banner1
+  width: 1600
+  height: 540
   alt: Services banner 1
+  images:
+    - name: banner1
+      width: 1600
+    - name: banner1_1024
+      width: 1024
+    - name: banner1_768
+      width: 768
+    - name: banner1_412
+      width: 412
 - title: System Architecture
-  image: banner2.png
-  image_mime: image/png
-  webp: banner2.webp
+  name: banner2
+  width: 1600
+  height: 540
   alt: Services banner 2
+  images:
+    - name: banner2
+      width: 1600
+      height: 540
+    - name: banner2_1024
+      width: 1024
+    - name: banner2_768
+      width: 768
+    - name: banner2_412
+      width: 412
